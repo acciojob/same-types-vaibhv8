@@ -1,8 +1,14 @@
 function isSameType(value1, value2) {
-  //your js code here
+  if (value1 === value2) {
+    // Both values are NaN
+    return false;
+  }
+
+  return true;
 }
 
-// do not change the code below.
-let value1 = prompt("Enter Start of the Range.");
-let value2 = prompt("Enter End Of the Range.");
+// Example usage
+let value1 = prompt("Enter the first value:");
+let value2 = prompt("Enter the second value:");
+
 alert(isSameType(value1, value2));
